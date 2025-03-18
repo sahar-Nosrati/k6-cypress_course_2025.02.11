@@ -1,0 +1,369 @@
+**************************** Manual testing vs automated testing vs continuous testing**********************************************
+*****************************Manual***************************************
+- Manual testing => QA analysts execute tests one-by-one in an individual manner (10)=>
+    - catch bugs and feature issues before a software application goes live
+
+- examples of manual testing (10,11)=>
+    - subjective evaluation, UX and exploratory testing.
+    - Functionalities
+    - User Interface (UI)
+    - User Experience (UX)
+    - Website & App Behavior
+    - Features
+    - User Acceptance
+    - Complex test scenarios that are not efficient and sometimes not feasible to be Automated.
+    - Test scenarios that are only being validated once in a while.
+
+- when manual testing is more important than automation testing (11)=>
+    - When flexibility is required
+    - Short-term projects
+    - When end-user usability is being tested
+
+****************Automation***********************
+
+- Automated testing (10, 15)=> utilization an automation tool and scripts => execution of predefined test cases and compare actual results with expected results  =>  validating the of functionality of the software and find bugs => ensures =>complete all requirements before being released into production
+
+
+- automated testing process (6,14) =>
+    - Select a testing tool
+    - Define the scope of automation
+    - Plan, design and develop
+    - Execute the test.
+    - Maintenance
+    - Utilizing the results to drive key decisions in the SDLC process.
+
+
+
+- the reasons of test automation (7,8, 9, 12, 14)=> ////*****
+    - Reduces time to ship 
+    - Reduces testing effort
+    - Reduces costs
+    - Makes Continuous Integration and Continuous Delivery practices possible
+    - Avoids partial/cumulative testing
+    - Makes regression testing banal 
+    - Avoids human error
+    - Makes everyone happy, including developers
+    - Instant test return and labor hours saved
+    - Swift feedback loop 
+    - Optimal resource allocation
+    - Enhanced accuracy
+    - Expanded test coverage
+    - Early bug detection
+    - Scalable testing
+    - Maximized ROI
+    - Faster than Manual Testing
+    - Reduces risks
+    - Better reporting capabilities
+    - More frequent tests.
+    - Reusable test scripts.
+
+
+- Disadvantages of automation test (8) => 
+    - High initial setup cost
+    - Inability to replace human intuition
+    - Maintenance overhead
+    - Limited testing for User Experience
+    - Challenges with complex scenarios
+    - Time-consuming creation of test scripts
+    - Inability to adapt to frequent UI changes
+    - Risk of false positives and negatives
+    - Skill dependency
+    - Overestimated automation
+
+
+- Tests which are difficult to automate (8, 11, 14) =>
+    - User Experience (UX) testing and surveys
+    - Usability testing
+    - Exploratory testing
+    - User Acceptance Testing (UAT)
+    - Internationalization or localization testing
+    - Mobile app testing
+    - Ad-hoc testing
+
+- frameworks of Automated Testing (9, 14) => 
+    - Selenium:  Automation Tests on web applications
+    - Appium:  Mobile Automation Tests
+    - Cypress: automation tests for web applications => integration and unit tests, all within a browser./ access => distributed object models in the browser / providing => debugger for further tests 
+    - Playwright:  automated tests on different browsers for websites
+    - Puppeteer:  functional tests on web applications
+    - Espresso: automated tests for Android applications
+    - XCUITest: automated tests for iOS applications
+    - Robotium => write automatic user acceptance, function and system tests for Android devices
+
+
+****************Continuous testing****************
+
+- continuous testing (15)=> automated tests in a continuous testing strategy => 
+        - code checks at every step in the software development and delivery pipeline
+        - quick feedback and rapid defect resolution
+        - combines manual and automated testing
+
+
+- Main fields of applications of Continuous testing (15)=>
+    - Agile and DevOps environments 
+    - Projects with frequent software updates and iterative development.
+    - Complex systems => constant quality assurance.
+
+
+****************************************************************************************************************************
+**********************************functional vs non-functional automated testing **********************************************
+
+**********************************functional ************************************
+- Automated functional testing (12, 14, 15)=> writing scripts that verify your application's behavior from the point of view of the user and delivers the expected results
+            - focus => examining the functionality of an application
+
+
+- Limitations of Automated Functional Testing (12)=>
+        - Not the same benefits for all Automated Functional Testing
+
+
+- Tools for Automated Functional Testing (12)=>
+        - E2E Testing Tools =>
+            - Cypress
+            - Playwright
+            - Selenium
+            - WebdriverIO => open source JavaScript-based testing tool => runs on Node.js
+
+        - Unit Testing Tools (12)=>
+            - JUnit =>  unit testing library for Java that helps you write repeatable tests
+            - Jest => JavaScript-based unit testing framework for React and React Native applications
+            - pytest => open source unit testing libraries for Python.
+        - Cloud-Based Tools =>
+            - Sauce Labs => cloud-based automated testing platform for web and mobile applications
+                    - cross-browser testing
+                    - mobile application testing
+                    - low-code testing
+                    - error monitoring and reporting.
+            - Curiosity => model-based testing tool =>
+                    - analyze your product 
+                    - generate the right set of automated functional tests
+                    - manage test data
+                    - run tests at scale
+            - TestSigma => automated functional testing on  => web applications, mobile applications, and APIs
+                    - record and playback testing
+                    - cross-browser testing
+                    - and maintenance-free testing. 
+
+
+******************Non-functional automated testing******************
+
+- Non-functional automated testing (15)=> evaluation => scalability, reliability, usability, performance, and security of application 
+        - focus => except  functional requirements => examine other critical aspects of software quality
+
+- Evaluation from view point of (15)=> 
+        - software’s response time
+        - handle concurrent users or heavy loads
+        - resilience under stress
+        - adherence to security protocols
+
+********************************************************************************************************************************
+********************************* Different types of functional automated testing***********************************************///
+
+- functional automated testing (12, 15) => 
+    - unit testing (component test) => the individual units (i.e., small blocks of code) are working as expected
+        - Data flow
+        - Branch coverage
+        - control flow
+        - statement coverage
+
+    - Integration testing  => components integration and work together => confirmation of data flows correctly between modules, dependencies => appropriate system functionality
+        - Incremental Testing
+        - Non-incremental testing
+
+    - system testing => evaluates the entire software system => behavior and functionality from end to end
+        - End-to-end testing (E2E) => the entire sequence of actions within a software application, from the initial user input to the final output
+        - Sanity testing => a kind of regression test =>
+                - evaluation after some new functionalities have been introduced or bugs have been fixed 
+        - Smoke testing (build verification testing or confidence testing)=> make sure that the critical functionalities of the program are working fine
+        - Black box testing => execution pre-defined test cases to identify functionality issues rather than internal implementation issues
+        - Monkey box testing (hoc testing or gorilla testing)=>  interrupt application processes in order to uncover potential errors or bugs
+        - Regression testing =>  to detect bugs introduced in your application due to changes in your codebase
+
+    - UAT (User acceptance testing) => assessing the software’s suitability for real-world use by end users
+        - Alpha tests =>initial phase in which a software application is tested internally by the development team or a select group of users
+        - Beta tests => larger pool external users => focus shifts to user feedback, usability, and overall user experience.
+        - Operational Acceptance Testing (OAT) => valuating factors such as performance, reliability, security, and cloud scalability of the software application when deployed in production.
+
+************************************************Non-functional automated testing***************************************************************
+
+- Non-functional automated testing (3, 4, 15, 21)=> 
+    - Performance test => software testing process => speed, response time, stability, reliability, scalability, and resource usage of a software application under a particular workload => main aspects => speed, scalability, and stability (SSS) output =>
+             - responsive application with better performance.
+        - Load testing => simplest format of performance test =>
+             - monitoring application behavior and performance under some load, which is either less than or equal to the desired load
+        - Stress testing => how a system performs (efficient performance) of system (application) above the expected maximum load 
+        - Soak (endurance testing) testing => to determine of sustained performance of system (application) after   continuous expected load over extended periods.
+        - Spike testing => Monitoring system (application ) manner according to modification load based on suddenly increase or decrease number of users
+        - Breakpoint (Capacity) testing  => similar to stress testing => according to predetermined failure condition, to gradually increase load to identify the capacity limits of the system. 
+        - Configuration testing => to determine the effects of configuration changes to the system's components on the system's performance and behavior
+        - Isolation testing => involving repetitive test execution that resulted in a system problem to determine and confirm  the fault domain
+        - Internet testing 
+        - Scalability testing => evaluate the system’s capacity to handle increasing amounts of data as more hardware resources are allocated to it
+
+    - Security testing => software system’s ability to protect data, maintain confidentiality, and defend against potential threats and vulnerabilities
+        - Penetration Testing (ethical hacking)=> simulating real-world attacks on the software system to identify potential security vulnerabilities
+        - Vulnerability Testing => to identify vulnerabilities and weaknesses in the software application, network, or infrastructure
+        - Security Configuration Testing => evaluating the security configurations of the software application, servers, and network infrastructure   
+
+    - Usability testing => evaluating the usability, intuitiveness, and overall user experience of software products
+        - Cross-browser Testing => tests an application on different browsers, operating systems, and mobile devices
+        - Exploratory testing => valuable for uncovering unexpected behavior, validating assumptions, and providing real-time feedback on software functionality, usability, and overall quality
+
+    - Compatibility testing => verifies the behavior and performance of software in different environments, such as different Web servers, hardware setups, and network configurations
+
+
+********************************************************************************************************************************
+*******************************************Black vs White vs gray testing******************************************************
+- White-box testing (15) => unit testing which is applied by is typically performed manually by developers => 
+        - Development of internal logic and structure of the code itself
+
+- Black box testing => does not require knowledge of an application’s internal functions or processes
+        - execute pre-defined test cases to identify functionality issues rather than internal implementation issues => input - output 
+
+- Gray Box Testing (16,17 )=> access to internal data structures and algorithms to design the test cases. =>
+        - use to debug software and evaluate vulnerabilities
+
+*********************************************************************************************************************************
+**********************************Some points************************************************************************************
+
+- different stage of performance test (1)=> 
+      - Software analysis and requirements preparation
+      - Strategy design
+      - Load generator configuration
+      - Server and load generator monitoring
+      - Test data generation
+      - Load scripts development
+      - Preliminary tests launch
+      - Tests execution
+      - Results analysis and reporting
+
+- Performance Testing Life Cycle (PTLC) (2) => connection between the expected result and the actual result => output =>
+    - responsive application with better performance.
+
+- PTLC phases =>
+    - Risk Assessment
+    - Requirement Gathering & Analysis
+    - Performance Test Planning
+    - Performance Test Design (Scripting)
+    - Workload Modelling 
+    - Performance Test Execution & Result Analysis
+    - Reporting and Recommendation
+
+***************************Common Performance Problems**********************************
+Common Performance Problems (4) =>
+    - Long Load time
+    - Poor response time
+    - Poor scalability 
+    - Bottlenecking 
+
+ ***********************************SDLC************************************************ 
+- SDLC phases (5)=>
+    - Requirement analysis
+    - Planning
+    - Software design such as architectural design
+    - Software development
+    - Testing
+    - Deployment
+
+********************* Test documentation**************************************************
+- Test documentation (18)=> artifacts => during or before the testing of a software application => 
+        -  importance of processes for the customer, individual and organization
+
+-  test execution process => depends on => test document =>
+        - primary objective of test document => decrease or eliminate the doubts related to the testing activities
+
+- Types of test document => 
+    - Test scenarios => definition of the multiple ways or combinations of testing the application
+    - Test case => in-details document => step by step procedure to test an application/ consists of =>
+        - complete navigation steps 
+        - inputs 
+        - all the scenarios that need to be tested
+    - Test plan => information about the testing activities =>  prepared by the managers or test lead
+    - Requirement traceability matrix(RTM) => documentation of all the test case has been covered => before the test execution process 
+    - Test strategy => high-level document =>
+        - test types (levels) to be executed
+        - what kind of technique has to be used 
+        - which module is going to be tested
+    - Test data => ????????????????????????????????????
+    - Bug report => document => maintaining a summary of all the bugs during the testing process => important because =>
+        - track the defects
+        - report the bug
+        - change the status of bugs which are fixed successfully
+        - avoid their repetition in further process
+    - Test execution report => the constancy of the product => 
+        - modules
+        - the number of written test cases executed
+        - pass, fail
+        - their percentage
+
+- Benefits of using Documentation
+    - clarifying the quality of methods and objectives.
+    - internal coordination when a customer uses software application.
+    - clarity about the stability of tasks and performance.
+    - feedback on preventive tasks.
+    - feedback for your planning cycle.
+    - It creates objective evidence for the performance of the quality management system.
+    - prevention of forgetting the values which we put in the first phase.
+    - a time-saving process => refer to the text document.
+    - It is also consistent because we will test on the same value.
+
+- Disadvantages => 
+    - tedious process => maintain the modification provided by the customer and parallel change in the document
+    - written by who does not have knowledge about product
+    - cost of the document will be exceeding its value
+
+*******************************Test Scenario***************************************
+
+- test scenario  (19)=> document  covers E2E functionality of a software application in liner statements =>
+    - high-level classification of testable requirements according to =>
+            - functionality of a module
+            - use cases
+
+- Preparation test scenario => 
+    - Read the requirement document of software =>
+        - BRS (Business Requirement Specification)
+        - SRS (System Requirement Specification)
+        - FRS (Functional Requirement Specification) 
+    - Determine all technical aspects and objectives for each requirement.
+    - Find all the possible ways by which the user can operate the software.
+    - determine possible scenario => 
+        - misuse of system 
+        - detection the users who can be hackers. 
+    - make a list of various test scenarios =>
+        - verification of  each function of the software
+    - create a traceability matrix  => about each and every corresponding test scenario requirement
+    - review of all scenarios 
+
+************************Test Case **********************************
+
+- Test case (20)=> group of conditions => evaluation of  software application is working as per the customer's requirements or not.
+
+- test case designing =>
+    - preconditions, case name
+    - input conditions
+    - expected result
+
+- Test case => detailed information => 
+    - testing strategy
+    - testing process
+    - preconditions
+    - expected output
+
+- the reasons of writing the test cases => 
+    - To require consistency in the test case execution
+    - To make sure a better test coverage
+    - It depends on the process rather than on a person
+    - To avoid training for every new test engineer on the product
+
+    ***************************************************************
+    - Bug => an error in program code =>  flaw or fault in the design, development, or operation of computer software => to produce an incorrect or unexpected result, or to behave in unintended ways.
+
+    - simple definition => why a software system behaves incorrectly or produces unexpected results 
+            - origin => human error 
+
+    - different types of bugs => 
+            - arithmetic 
+            - interface
+            - logic
+            - syntax
+            - teamwork   

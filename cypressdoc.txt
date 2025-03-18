@@ -1,0 +1,59 @@
+- Cypress is a next generation front end testing tool built for the modern web.
+
+- Cypress provides solutions for:
+  - end -to -end testing 
+  - component testing 
+  - accessibility testing 
+  - UI coverage 
+
+- Cypress can test anything that runs in a browser
+
+- cypress products ->
+  - cypress app 
+  - cypress cloud 
+  - UI coverage 
+  - cypress accessibility 
+
+- Features of cypress ->
+  - Cypress App
+    - Time travel
+    - Debuggability
+    - Automatic Waiting
+    - Spies, Stubs, and Clocks
+      - stubbing -> Stubbing is a testing technique for replacing certain functions or methods with versions that return predefined values.
+      - Spies: Track function calls but don’t alter the function’s behavior. They are used to verify that a function was called with specific arguments or the number of times it was called.
+    - Network Traffic Control
+    - Consistent Results
+    - Cross Browser Testing
+  - cypress cloud ->
+    - Test Replay
+    - Smart Orchestration
+    - Flake Detection
+    - Branch Review
+    - Integrations
+    - Test Analytics
+  - UI coverage ->
+    - Visualize Coverage
+    - Results API
+  - Cypress Accessibility ->
+    - Accessibility Checks
+    - Run-level reports
+    - Results API
+
+- Tests -> 
+  - End-to-end Testing
+  - component testing 
+  - Accessibility Testing
+  - UI Coverage 
+
+- describe and it come from Mocha
+- expect comes from Chai
+
+- A solid test generally covers 3 phases:
+  - Set up the application state.
+  - Take an action.
+  - Make an assertion about the resulting application state.
+
+- Cypress' commands are built to fail if they don't find what they're expecting to find. This is known as an Implicit Assertion.
+
+- If we want to evaluate that applicationworks as we expect  -> we can use assertion -> .should() 

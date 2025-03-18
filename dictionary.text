@@ -1,0 +1,18 @@
+- PAN (Personal Area Network) => an interconnection of personal technology devices to communicate over a short distance
+- LAN => local area network => a group of connected computing devices within a localized area that usually share a centralized Internet connection.
+- CAN => Campus Area Network =>  group of interconnected Local Area Networks (LAN) 
+- MAN => Metropolitan area Network covers a larger area than that covered by a LAN and a smaller area as compared to WAN
+- RAN => radio access network => a major component of a wireless telecommunications system that connects individual devices to other parts of a network through a radio link
+- WAN => Wide Area Network is a computer network that extends over a large geographical area, although it might be confined within the bounds of a state or country
+- bottleneck  => capacity of an application or a computer system is limited by a single component
+- software development lifecycle (SDLC) => a methodology with clearly defined processes for creating high-quality software
+- UX => user experience
+- CI/CD => continuous integration and continuous delivery/continuous deployment
+- WWW => World Wide Web => a network of networks => a global network of computers that are linked together by cables and telephone lines making communication possible among them => online content that is formatted in HTML and accessible via the HTTP/HTTPS protocol
+- Internet => connection between countless, separate servers, computers, and devices
+- QA analysts => Quality assurance analysts 
+- flaky test => return both passes and failures despite no changes to the code or the test itself.
+- Deployment => the mechanism through which applications, modules, updates, and patches are delivered from developers to users
+- application programming interface (API) => code that enables two software programs to communicate
+- Site Reliability Engineering (SRE) 
+- IDE -> integrated development environment -> a platform in order to create a project, add all libraries, software to our project etc. 

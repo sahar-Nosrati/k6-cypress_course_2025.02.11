@@ -1,0 +1,45 @@
+- cypress installation -> by npm ->
+  - npm install cypress --save-dev
+
+
+
+
+- describ("name of suit test",()=>{}),
+- cy.visit("url")
+- cy.get("css locator")
+- cy.get("#mce_0_ifr").its("0.contentDocument.body").should("be.visible") -> find locator of an element which is locatiing inside other element ->
+  - i_frame.clear().type("Welcome"); -> get element and pass our value 
+
+ should/and assertions ->
+  - 3 ways to test ->
+      - cy.visit("related_url") ->
+        - cy.url().should("include", "a part of url")
+        - cy.url().should("eq", "whole of url")
+        - cy.url().should("contain", "a word of url")
+      - point: you can chain should and remove cy.url() -> 
+        - cy.url().should("include", "a part of url").should("eq", "whole of url").should("contain", "a word of url")
+
+      - point: you can replace should with and ->
+       - cy.url().should("include", "a part of url").and("eq", "whole of url").and("contain", "a word of url") 
+
+      - point: if you add (not) in front of 3 key words (contain, include and eq) -> the evelution should not include this task otherwise, it will be filed 
+
+
+- Open and run the cypress test commands
+  - npx cypress open -> Cypress Test Runner GUI (dashboard), and browser allowing you to intract with application (Headed)
+  - npx cypress run -> run in the headless mode (terminal) (Headless)
+  - npx cypress run --spec -> Run a specific test file (terminal) (Headless)
+  - npx cypress run --browser chrome -> run test in terminal (changed default browser from atom to chrome) (Headless)
+  - npx cypress run --headed --spec "cypress\e2e\test1.cy.js" --browser chrome -> run test in browser and cypress dashboard (changed default browser from atom to chrome in the terminal and specified test file) (Headed)
+  -  npx cypress run --spec cypress\e2e\test1.cy.js --browser chrome -> run test in terminal (changed default browser from atom to chrome and specified test file) (Headless) 
+  - npx cypress run --headed --browser chrome -> exihibiting short-time dashboard test and browser testing, run test in terminal (changed default browser from atom to chrome) (Headless)
+  - in the script property of package.json ->  "cy:open": "cypress open" ->
+    - npm run cy:open
+
+
+- custom command -> After write custom command, copy it and put in .support/commans.js ->
+  - creating custom command ->
+    - cypress.add ("command name", (locator of our element (xxx for example)) => {
+      copy your written code 
+      return cy.get(xxx)....
+    })

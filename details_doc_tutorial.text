@@ -1,0 +1,30 @@
+
+
+
+
+
+
+- different alerts -> 
+  - Basic alert()
+  - confirm()
+  - prompt()
+  - Custom Alerts (Using HTML/CSS)
+  - console.log()
+
+
+- Very important -> main locators -> 
+  - //<tag's name>[@<attribute's name>= "value"] 
+  - //<tag's name>[contains(@attribute's, "partial value")]
+  - //<tag's name>[text()="exact inner text"] || //<tag's name>[contains(text(), "partial text")] 
+
+
+- cy.on("window:confirm", (t) => {
+      expect(t).to.contains("I am a JS Confirm");
+    }); -> explanation 
+      - cy.on -> This is a Cypress command that listens for events.
+      - "window:confirm" event -> is triggered when a window.confirm dialog box is shown in the application being tested.
+        - window:confirm -> event -> refers to ->
+         - window.confirm -> dialog box -> displays a message to the user with OK and Cancel buttons.
+        - (t) => { ... } -> Here, t represents the text displayed in the window.confirm dialog box. (expect(t).to.contains("I am a JS Confirm");:) 
+
+

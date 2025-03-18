@@ -1,0 +1,233 @@
+- Cypress is a test automation framework that is used for testing web applications. It is based on JavaScript and provides a unique set of features like screenshots and records for your test runs that make it well-suited for testing modern web applications.
+- sypress -> front web automation testing 
+- modern web applications -> written by modern technologies including react and angular 
+- static web page -> HTML, CSS and vanilla JavaScript
+- modern web applications -> specifice set up features and these features are available in cypress in order to automation testing tools 
+- we can automate any of applications are running on the browser 
+- Automation scripts can use different programming languages-> Cypress -> JS and open source
+- sourses of sypress ->
+  - sypress runner -> free automatio  testing tools
+  - sypress dashboard -> not-free -> use for specific features for test-> save test history
+- cypress is being run in node.evironment and comes with NPM modules
+
+- who can use cypress to run? cypress has been developed by developers in order to unit test and integration test 
+
+- cypress is used to -> Dev & QA 
+  - automation e2e test 
+  - integration test 
+  - unit test 
+  - Automation API Test 
+
+//
+
+- Cypress can be applied for web and API tests
+- End-to-End (E2E) Testing is a software testing methodology that validates the entire application flow, from start to finish, ensuring the system works as intended from the user's perspective.
+
+
+- cypress aco-system  ---->
+  - Test-runner ----> open source and locally installation 
+  - Dashboard -> pay money 
+
+- features of cypress ->
+  - time-travel 
+  - debuggability 
+  - automatic waits 
+  - consistence results  
+  - screenshots and videos 
+  - support cross-browser testing -> locally or remotely 
+
+
+- limitations -> 
+  - It is not possible to automate dwindows based/ mobile  applications 
+  - limited support for browser 
+  - limitations for JS/typescript 
+  - reading/writing data onto the files is difficult 
+  - third party reporting tools are limited (cypress dashboard or only mocha as html basic reporting tools)
+
+- Cypress and the Node process constantly communicate, synchronize, and perform tasks on behalf of each other.
+- method of cypress download ->
+  - npm install -> the best method
+  - not using node or pavkage manager -> download cypress directly from  download Cypress directly from our CDN (link)
+
+- writing and executing 
+
+
+describe('My First Test', () => {
+
+
+  it('Test1', () => {
+    expect(true).to.equal(true)
+  })
+
+})
+
+describe('My First Test', function(){
+
+
+  it('Test1', () => {
+    expect(true).to.equal(true)
+  })
+
+})
+
+- testSuite -> TestCase--- test steps 
+- every spect file(cy.js) -> contains ->
+  - one describe block (test suites) -> contains -> 
+    - multiple it blocks -> every it blocks present one task
+
+
+- During automate features of different web application -> intract with different elements in web application 
+- locator -> Identifying the elements on the web application, we need locator 
+
+- support locator by cypress ->
+  - css selector 
+  - xpath locator -> we need cypress xpath locator and plug in it 
+
+- xpath -> we consider ->
+  - locate elements -> cy.get(locator(css selector or xpath))
+  - Identifying element 
+
+
+- css selector -> tag in optional 
+  - tag id 
+  - tag class 
+  - tag attribute
+  - tag class attribute 
+
+- finding by css selector ->
+  - Inspect your element -> right click -> inspect -> element (or right corner of pag in chrome, ... structur ->more tools ->  in Development tools) 
+  - ctrl + f -> finding string, selector or Xpath box ->
+    - finding by id -> #name_of_id
+    - finding by class -> .name_of_class
+    - finding by attribute -> [attribute="valu"]
+    - finding by class attribute -> .class_name [attribute="valu"]
+
+
+- cy.get().type() -> type is a method for searching a element 
+- cy.get() -> just for css selector (css locator)
+
+- assertion -> addition several validation to our test cases which is called assertions 
+
+- types of assertion ->
+  - implicit (build in) assertion ->
+    - default assertion in cypress -> should/and 
+
+
+  - explicit assertion -> we need write explicitly -> 
+    - expect -> BDD -behavial deriven development
+    - assert -> TDD -> test driven development 
+
+- mocha -> js test framework is running on the node.js and in the browser and making asynchronous testinf simple 
+
+- mocha contains 2 parts -> 
+  - describe() -> including group of test  like test suite -> arguments
+   - the name of test suite
+   - call back function (it block) -> it block contains -> 
+    - name in single or double qoutes 
+    - call back function in order to execute test case 
+
+-
+
+- Check box ->
+  - cy.visit("related_url") ->
+    - point: cy.get("css locator").should("be.visible") -> test of visiability of radi buttond 
+    - cy.get("css locator").check().should("be.checked") -> selecting radio button 
+
+- events in cypress -> main point ->
+  - cy.on():
+
+    - Handles global events like window:alert, window:confirm, and window:prompt.
+
+  - Assertions:
+
+   -  Use expect() to validate the message shown in the alert or prompt.
+
+  - Simulating Responses:
+
+     - Return values from window:confirm or window:prompt to simulate user choices.
+
+- Base64 is an encoding technique used to convert binary data (like images or text) into a text string that consists of ASCII characters.
+
+- The Authentication scheme that defines how the credentials are encoded.Some of the more common types are (case-insensitive): 
+  - Basic, 
+  - Digest, 
+  - Negotiate 
+  - AWS4-HMAC-SHA256
+
+- A Basic Auth Header is a simple way to authenticate a user when making an HTTP request. It's widely used for simple username and password authentication in APIs.
+
+- What is Basic Auth Header? When you send a request to a server, you include a special header that contains your username and password encoded in Base64.
+
+- Hook -> hooks are functions that run at specific stages of your test lifecycle. They are provided by the test framework Cypress uses (Mocha), and they allow you to execute setup or teardown logic for your tests.
+
+
+- Page object model -> With the Page Object Model, you can simply break down a whole web application into multiple pages and use classes to depict those pages. In this way, each page in the web application corresponds to a particular class in the Page Object. 
+
+
+
+
+- //assignment computer class 2025.02.05
+- Scalability Testing -> is a type of non-functional testing in which the performance of a software application, system, network or process is tested in terms of its capability to scale up or scale down the number of user request load or other such performance attributes 
+
+- OSI model -> Open system interconnecte model 
+- connection 2 devices in 7 abstracted layer ->
+
+  - Application protocol  -> HTTP protocol -> 
+    - application layer 
+    - presentation layer -> Data is formatted and encrypted.
+    - session layer
+  - Transport layer -> End-to-end connection between devices -> 
+    - TCP and UDP are exist in this layer -> 
+      - TCP -> reliable end-to-end connection between devices -> sending each segment indivitually -> recieve data and use sequence number in order to arrange data , check data in order to prevent error during transmission 
+        - create segments -> including: NO of sequence =3, port num=xxx, data =.., NO of sequence =2, port num=xxx, data = .. etc 
+      - UDP -> similar to TCP, simpler and faster , does not provide error checking and relibaility 
+  - network layer -> Responsible routing data across the network -> IP part of TCP/IP
+  - Data link layer -> recive data from physical layer and organizing in a frame ->
+    - ensure deliver correctly frame to destination -> Ethernet 
+  - physical layer -> transmiting raw bits data accross a physical connection 
+
+
+- HTTP request ->
+  - Add HTTP header to data in frame 
+  - Add TCP header and create segments/ UDP packet -> Transport layer 
+    - TCP header -> picture
+  - Added IP header in network layer -> IP header -> source and destination IP address 
+  - Added MAC addresses -> source and destination MAC addresses 
+  - Encapsulated frames and send over network in raw bits in the physical layer
+
+
+// new tutorial cypress 
+- cypress -> js-based automation framework( js testing framework) -> can test anything that runs on a browser 
+- Lambda testcypress CLI  -> instumental in running cross-browser test with cypress 
+
+- How to use cypress -> 
+  - setup test 
+  - write test
+  - Run test 
+  - Debug 
+
+- Supported browser ->
+  - chrome 
+  - Firefox
+  - Edge
+  - Electron
+  - Brave 
+
+- Cypresss feature ->
+  - Time travel -> take snapshot as your test run 
+  - Debuggability -> readable errors and stack traces 
+  - Automatic waiting -> automatically waits for commands and assertions before moving on 
+  -  Consistent results -> does not use selenium or webdriver. Fast, consistent and reliable 
+  - screenshots and videos 
+  - cross browser testing (locally or reote(CI CD))
+
+- Cypress is able to write ->
+  - END-TO-END test
+  - Integration test 
+  - Unit test 
+
+- Cypress as a Package Dependency -> 
+  - Cypress is installed via npm/yarn → Just like any other JavaScript library.
+  - No separate downloads → Unlike Selenium, you don’t need additional drivers.
+  - Easily managed in package.json → Can be installed, updated, or removed like any dependency. 
+  - Runs locally inside your project → no global installation is required.
